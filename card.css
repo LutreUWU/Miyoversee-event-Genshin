@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(118, 116, 121);
+    font-size: 3em;
+}
+
+section{
+    padding-bottom: 100px;
+}
+.CardDiv{
+    position: relative;
+    display: flex;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 80vh;
+    border: 8px var(--border);
+    border-style:groove;
+}
+
+.CardDiv::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-image: var(--background);
+    background-position: center;
+    background-size:cover;
+    filter: blur(5px) brightness(50%);
+    z-index: -1;
+    box-shadow: inset 0 0 100px var(--box-shadow);
+
+}
+
+.Left-Div{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.NameCharacterDiv{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+.SubTitle,
+.Title{
+    color: white;
+    text-shadow: 0 0 4px black;
+    font-family: "American Captain";
+    font-size: 1.4em;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 7px;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    
+}
+
+.SubTitle{
+    font-size: 0.5em;
+    color: goldenrod;
+    text-decoration: underline;
+}
+.img{
+    position: absolute;
+    height: 100%;
+    object-fit: contain;
+    object-position:right;
+    filter: drop-shadow(0px 0px 20px var(--img-shadow));
+}
+
+
+.Right-Div{
+    z-index: -1 ;
+    border-left: 6px double var(--border);
+}
+.Text{
+    font-family: "American Captain";
+    width: 50%;
+    height: 100%;
+    color: white;
+    background:linear-gradient(to top, rgba(183, 150, 226, 0.3) 50%, transparent);
+    text-shadow: 0 0 3px black;
+}
+
+.Text h1{
+    font-size: 1.4em;
+    margin:0;
+    margin-bottom:5%;
+    text-align: center;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    color: orange;
+}
+
+
+.Text h2{
+    font-size: 1em;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.Text h4{
+    margin: 1%;
+    font-size: 0.5em;
+    text-align: center;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
