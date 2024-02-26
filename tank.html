@@ -18,12 +18,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<!--TANK-->
+<!--
+    Note: On va créer un fichier html pour chaque rôle :
+    - Tank
+    - DPS/SubDPS
+    - Buffeur
+    - Debuffeur
+    - Soigneur / Utilitaire
+-->
+
+<!--Carte de tous les persos TANK-->
 <!-- Pour créer une nouvelle carte, copier de "<section>" jusqu'à "</section"-->
 
 <!-- 
 Les seules trucs à changer pour les persos
---background : Vous devez changez ce qu'il y a entre les ' ', par exemple pour Fu xuan, mon fond d'écran était dans le dossier ./SkillsCharacter/Fuxuan/BG.jpg alors je cible ce chemin d'accès. 
+--background : Vous devez changez ce qu'il y a entre les ' ', par exemple pour Fu xuan, mon fond d'écran était dans le dossier ./HSR/Fuxuan/BG.jpg alors je cible ce chemin d'accès. 
 --border: La couleur des bordures, déplacez votre curseur sur le petit carré de couleur et vous pourrez changez la couleur facilement.
 --box-shadow: L'effet de lueur tout autour de la Carte, même principe que pour --border, le curseur sur le petit carré.
 --img-shadow: L'effet de lueur autour de l'image du perso, même principe que pour --border, le curseur sur le petit carré.
@@ -34,7 +43,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
 <body>
     <!--Fu xuan-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/FuXuan/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -45,7 +54,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
@@ -61,7 +70,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
     </section>
     <!--Gepard-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/FuXuan/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -72,7 +81,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%;"  src="./HSR/Fuxuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
@@ -89,9 +98,9 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
             
         </div>
     </section>
-    <!--Clara-->Qu
+    <!--Clara-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/Kafka/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -102,7 +111,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
@@ -118,7 +127,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
     </section>
     <!--Pionnier(ière)-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/Blade/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -129,7 +138,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
@@ -145,7 +154,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
     </section>
     <!--March-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/FuXuan/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -156,7 +165,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
@@ -172,7 +181,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
     </section>
     <!--Albedo-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/FuXuan/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -183,7 +192,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
@@ -199,7 +208,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
     </section>
     <!--Denya-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/FuXuan/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -210,7 +219,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
@@ -226,7 +235,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
     </section>
     <!--Beidou-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/FuXuan/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -237,7 +246,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
@@ -253,7 +262,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
     </section>
     <!--Thoma-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/FuXuan/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -264,7 +273,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
@@ -280,7 +289,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
     </section>
     <!--Layla-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/FuXuan/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -291,7 +300,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
@@ -307,7 +316,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
     </section>
     <!--Gorou-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/FuXuan/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -318,7 +327,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
@@ -334,7 +343,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
     </section>
     <!--Zhongli-->
     <section style="
-    --background:url('./SkillsCharacter/FuXuan/BG.jpg');
+    --background:url('./HSR/FuXuan/BG.jpg');
     --border:rgb(150, 91, 226); 
     --box-shadow:rgb(188, 143, 247); 
     --img-shadow:rgba(146, 79, 209, 0.8);
@@ -345,7 +354,7 @@ Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, r
                     <p class="Title">Nom du joueur</p>
                     <p class="SubTitle">Team & Role</p>
                 </div>
-                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./SkillsCharacter/FuXuan/Character.png">
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
                 <div class="Trait"></div>
             </div>
             <div class="Right-Div Text">
