@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <link rel="stylesheet" href="./card.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<!--
+    Note: On va créer un fichier html pour chaque rôle :
+    - Tank
+    - DPS/SubDPS
+    - Buffeur
+    - Debuffeur
+    - Soigneur / Utilitaire
+-->
+
+<!--Carte de tous les persos TANK-->
+<!-- Pour créer une nouvelle carte, copier de "<section>" jusqu'à "</section"-->
+
+<!-- 
+Les seules trucs à changer pour les persos
+--background : Vous devez changez ce qu'il y a entre les ' ', par exemple pour Fu xuan, mon fond d'écran était dans le dossier ./HSR/Fuxuan/BG.jpg alors je cible ce chemin d'accès. 
+--border: La couleur des bordures, déplacez votre curseur sur le petit carré de couleur et vous pourrez changez la couleur facilement.
+--box-shadow: L'effet de lueur tout autour de la Carte, même principe que pour --border, le curseur sur le petit carré.
+--img-shadow: L'effet de lueur autour de l'image du perso, même principe que pour --border, le curseur sur le petit carré.
+
+Vous devez changer l'image du personnage (en dessous de la ligne de code Soigneur), vous faites comme pour le --background.
+Si l'image du personnage n'est pas bien centré, modifier les valeurs de left, right, top et bottom.
+-->
+<body>
+    <!--DHIL-->
+    <section style="
+    --background:url('./SkillsCharacter/DHIL/BG3.png');
+    --border:rgb(138, 197, 28); 
+    --box-shadow:rgb(58, 221, 25); 
+    --img-shadow:rgba(207, 176, 36, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Modokka</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: -50%; right:0; top:0; bottom:0;"  src="./HSR/DHIL/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Black Swan</h1>
+                <h2>COMPETENCE</h2>
+                <h4>DHIL renforce ses attaques en fonction du nombre d’écailles qu’il dépense (attaques renforcées à 100 %):                        
+                    <p style="margin:0">1: -1 a un ennemie</p>
+                    <p style="margin:0">2: -1 a 3 ennemis,</p>
+                    <p style="margin:0">3: -2 a un ennemi et -1 à 2 ennemis (cd 2 tours)</p>
+                    </h4>
+                <h2>ULTIME</h2>
+                <h4>Tu fais -1 vie à 100% à trois ennemis et génère 2 écailles  (tt les 5 tours). </h4>
+                <h2>TALENT</h2>
+                <h4>Chaque tour, DHIL récupère 1 écaille, max 3</h4>
+            </div>
+        </div>
+    </section>
+    <!--Gepard-->
+    <section style="
+    --background:url('./SkillsCharacter/Welt/BG1.png');
+    --border:rgb(197, 172, 28); 
+    --box-shadow:rgb(204, 126, 24); 
+    --img-shadow:rgba(207, 176, 36, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Nightblade</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: 0%;"  src="./HSR/Welt/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Welt</h1>
+                <h2>COMPETENCE</h2>
+                <h4>Fait descendre 2 cibles ennemies dans l’ordre de passage en dernier et leur applique “Désavantage” (roll + 3 tours)</h4>
+                <h4>Compétence renforcée : consomme 4 cumuls de rugissement des cordes, donne 1 dégât supplémentaire à un allié, de plus l’attaque de l’allié est garantie à 100%.</h4>
+                <h2>ULTIME</h2>
+                <h4>Réduit au “Silence” 3 cibles pour le reste du tour (100% + tt les 5 tours)
+                </h4>
+                <h2>TALENT</h2>
+                <h4>Chaque ennemi affecté par “Silence” reçoit -1 lors de la prochaine attaque de Welt (+ peut provenir d'autre source)                </h4>
+            </div>
+            
+        </div>
+    </section>
+    <!--Clara-->
+    <section style="
+    --background:url('./HSR/Kafka/BG.jpg');
+    --border:rgb(150, 91, 226); 
+    --box-shadow:rgb(188, 143, 247); 
+    --img-shadow:rgba(146, 79, 209, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Nom du joueur</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Fu xuan</h1>
+                <h2>COMPETENCE</h2>
+                <h4>Vous réduisez de moitié une attaque subie tous les 3 tours (à compter de son activation)</h4>
+                <h2>ULTIME</h2>
+                <h4>Tous les 5 tours, vous regagner 2 vie et 1 vie pour tous vos alliés (💯) </h4>
+                <h2>TALENT</h2>
+                <h4>Vous redirigez après votre compétence l’attaque ennemis vers vous (🎲)!</h4>
+            </div>
+        </div>
+    </section>
+    <!--Pionnier(ière)-->
+    <section style="
+    --background:url('./HSR/Blade/BG.jpg');
+    --border:rgb(150, 91, 226); 
+    --box-shadow:rgb(188, 143, 247); 
+    --img-shadow:rgba(146, 79, 209, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Nom du joueur</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Fu xuan</h1>
+                <h2>COMPETENCE</h2>
+                <h4>Vous réduisez de moitié une attaque subie tous les 3 tours (à compter de son activation)</h4>
+                <h2>ULTIME</h2>
+                <h4>Tous les 5 tours, vous regagner 2 vie et 1 vie pour tous vos alliés (💯) </h4>
+                <h2>TALENT</h2>
+                <h4>Vous redirigez après votre compétence l’attaque ennemis vers vous (🎲)!</h4>
+            </div>
+        </div>
+    </section>
+    <!--March-->
+    <section style="
+    --background:url('./HSR/FuXuan/BG.jpg');
+    --border:rgb(150, 91, 226); 
+    --box-shadow:rgb(188, 143, 247); 
+    --img-shadow:rgba(146, 79, 209, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Nom du joueur</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Fu xuan</h1>
+                <h2>COMPETENCE</h2>
+                <h4>Vous réduisez de moitié une attaque subie tous les 3 tours (à compter de son activation)</h4>
+                <h2>ULTIME</h2>
+                <h4>Tous les 5 tours, vous regagner 2 vie et 1 vie pour tous vos alliés (💯) </h4>
+                <h2>TALENT</h2>
+                <h4>Vous redirigez après votre compétence l’attaque ennemis vers vous (🎲)!</h4>
+            </div>
+        </div>
+    </section>
+    <!--Albedo-->
+    <section style="
+    --background:url('./HSR/FuXuan/BG.jpg');
+    --border:rgb(150, 91, 226); 
+    --box-shadow:rgb(188, 143, 247); 
+    --img-shadow:rgba(146, 79, 209, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Nom du joueur</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Fu xuan</h1>
+                <h2>COMPETENCE</h2>
+                <h4>Vous réduisez de moitié une attaque subie tous les 3 tours (à compter de son activation)</h4>
+                <h2>ULTIME</h2>
+                <h4>Tous les 5 tours, vous regagner 2 vie et 1 vie pour tous vos alliés (💯) </h4>
+                <h2>TALENT</h2>
+                <h4>Vous redirigez après votre compétence l’attaque ennemis vers vous (🎲)!</h4>
+            </div>
+        </div>
+    </section>
+    <!--Denya-->
+    <section style="
+    --background:url('./HSR/FuXuan/BG.jpg');
+    --border:rgb(150, 91, 226); 
+    --box-shadow:rgb(188, 143, 247); 
+    --img-shadow:rgba(146, 79, 209, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Nom du joueur</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Fu xuan</h1>
+                <h2>COMPETENCE</h2>
+                <h4>Vous réduisez de moitié une attaque subie tous les 3 tours (à compter de son activation)</h4>
+                <h2>ULTIME</h2>
+                <h4>Tous les 5 tours, vous regagner 2 vie et 1 vie pour tous vos alliés (💯) </h4>
+                <h2>TALENT</h2>
+                <h4>Vous redirigez après votre compétence l’attaque ennemis vers vous (🎲)!</h4>
+            </div>
+        </div>
+    </section>
+    <!--Beidou-->
+    <section style="
+    --background:url('./HSR/FuXuan/BG.jpg');
+    --border:rgb(150, 91, 226); 
+    --box-shadow:rgb(188, 143, 247); 
+    --img-shadow:rgba(146, 79, 209, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Nom du joueur</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Fu xuan</h1>
+                <h2>COMPETENCE</h2>
+                <h4>Vous réduisez de moitié une attaque subie tous les 3 tours (à compter de son activation)</h4>
+                <h2>ULTIME</h2>
+                <h4>Tous les 5 tours, vous regagner 2 vie et 1 vie pour tous vos alliés (💯) </h4>
+                <h2>TALENT</h2>
+                <h4>Vous redirigez après votre compétence l’attaque ennemis vers vous (🎲)!</h4>
+            </div>
+        </div>
+    </section>
+    <!--Thoma-->
+    <section style="
+    --background:url('./HSR/FuXuan/BG.jpg');
+    --border:rgb(150, 91, 226); 
+    --box-shadow:rgb(188, 143, 247); 
+    --img-shadow:rgba(146, 79, 209, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Nom du joueur</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Fu xuan</h1>
+                <h2>COMPETENCE</h2>
+                <h4>Vous réduisez de moitié une attaque subie tous les 3 tours (à compter de son activation)</h4>
+                <h2>ULTIME</h2>
+                <h4>Tous les 5 tours, vous regagner 2 vie et 1 vie pour tous vos alliés (💯) </h4>
+                <h2>TALENT</h2>
+                <h4>Vous redirigez après votre compétence l’attaque ennemis vers vous (🎲)!</h4>
+            </div>
+        </div>
+    </section>
+    <!--Layla-->
+    <section style="
+    --background:url('./HSR/FuXuan/BG.jpg');
+    --border:rgb(150, 91, 226); 
+    --box-shadow:rgb(188, 143, 247); 
+    --img-shadow:rgba(146, 79, 209, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Nom du joueur</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Fu xuan</h1>
+                <h2>COMPETENCE</h2>
+                <h4>Vous réduisez de moitié une attaque subie tous les 3 tours (à compter de son activation)</h4>
+                <h2>ULTIME</h2>
+                <h4>Tous les 5 tours, vous regagner 2 vie et 1 vie pour tous vos alliés (💯) </h4>
+                <h2>TALENT</h2>
+                <h4>Vous redirigez après votre compétence l’attaque ennemis vers vous (🎲)!</h4>
+            </div>
+        </div>
+    </section>
+    <!--Gorou-->
+    <section style="
+    --background:url('./HSR/FuXuan/BG.jpg');
+    --border:rgb(150, 91, 226); 
+    --box-shadow:rgb(188, 143, 247); 
+    --img-shadow:rgba(146, 79, 209, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Nom du joueur</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Fu xuan</h1>
+                <h2>COMPETENCE</h2>
+                <h4>Vous réduisez de moitié une attaque subie tous les 3 tours (à compter de son activation)</h4>
+                <h2>ULTIME</h2>
+                <h4>Tous les 5 tours, vous regagner 2 vie et 1 vie pour tous vos alliés (💯) </h4>
+                <h2>TALENT</h2>
+                <h4>Vous redirigez après votre compétence l’attaque ennemis vers vous (🎲)!</h4>
+            </div>
+        </div>
+    </section>
+    <!--Zhongli-->
+    <section style="
+    --background:url('./HSR/FuXuan/BG.jpg');
+    --border:rgb(150, 91, 226); 
+    --box-shadow:rgb(188, 143, 247); 
+    --img-shadow:rgba(146, 79, 209, 0.8);
+    ">
+        <div class="CardDiv">
+            <div class="Left-Div">
+                <div class="NameCharacterDiv">
+                    <p class="Title">Nom du joueur</p>
+                    <p class="SubTitle">Soigneur</p>
+                </div>
+                <img class="img" style="left: -80%; right:0; top:0; bottom:0;"  src="./HSR/FuXuan/Character.png">
+                <div class="Trait"></div>
+            </div>
+            <div class="Right-Div Text">
+                <h1>Fu xuan</h1>
+                <h2>COMPETENCE</h2>
+                <h4>Vous réduisez de moitié une attaque subie tous les 3 tours (à compter de son activation)</h4>
+                <h2>ULTIME</h2>
+                <h4>Tous les 5 tours, vous regagner 2 vie et 1 vie pour tous vos alliés (💯) </h4>
+                <h2>TALENT</h2>
+                <h4>Vous redirigez après votre compétence l’attaque ennemis vers vous (🎲)!</h4>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
